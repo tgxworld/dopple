@@ -52,8 +52,8 @@ class User < ActiveRecord::Base
   def fitbit_data
     raise "Account is not linked with a Fitbit account" unless linked?
     @client ||= Fitgem::Client.new(
-                :consumer_key => ENV["FITBIT_CONSUMER_KEY"],
-                :consumer_secret => ENV["FITBIT_CONSUMER_SECRET"],
+                :consumer_key => 'b408c603792e41a59a178f28b60125c6',
+                :consumer_secret => 'a0807ec324434d25af12a4d90f61ee2c',
                 :token => oauth_token,
                 :secret => oauth_secret,
                 :user_id => uid

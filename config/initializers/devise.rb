@@ -168,7 +168,7 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  config.omniauth :fitbit, ENV['FITBIT_CONSUMER_KEY'], ENV['FITBIT_CONSUMER_SECRET']
+  config.omniauth :fitbit, 'b408c603792e41a59a178f28b60125c6', 'a0807ec324434d25af12a4d90f61ee2c'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
