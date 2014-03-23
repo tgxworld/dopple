@@ -22,6 +22,8 @@ gem 'simple_form'
 # API Support
 gem 'rabl'
 
+gem 'bootstrap-sass', '~> 3.1.1'
+
 # Monitoring
 group :production do
   gem 'newrelic_rpm'

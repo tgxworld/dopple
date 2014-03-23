@@ -1,0 +1,24 @@
+- activities = @client.activities_on_date(Date.current)
+
+.row-fluid
+  - if !user_signed_in?
+    .row
+      = image_tag('fitbit_logo.jpeg')
+    .row
+      = link_to "Login with Fitbit", user_omniauth_authorize_path(:fitbit), class: 'btn'
+  - else
+    .row
+      = image_tag('digimon_egg.jpg')
+    .row
+      %h1
+        Steps
+        = activities['summary']['steps']
+    .row
+      %h1
+        Fairly Active Minutes
+        = activities['summary']['fairlyActiveMinutes']
+
+.row
+  %section.left.first asdas
+  %section.left.second adsad
+  %section.left.third adas
