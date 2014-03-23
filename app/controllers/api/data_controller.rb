@@ -2,7 +2,7 @@ class Api::DataController < ApplicationController
   def steps
     respond_to do |format|
       format.html do
-        render :json => summary
+        render :json => summary.merge(user_info)
       end
     end
   end
@@ -15,6 +15,10 @@ class Api::DataController < ApplicationController
 
   def summary
     client.activities_on_date(Date.current)
+  end
+
+  def user_info
+    client.user_info['user']
   end
 end
 
