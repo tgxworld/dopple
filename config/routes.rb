@@ -32,6 +32,7 @@ FitgemClient::Application.routes.draw do
     get 'body_measurements', controller: 'body_measurements', action: 'show'
     resources :activities, only: [:index, :create]
     resources :foods, only: [:index]
+    get 'steps', controller: 'data', action: 'steps'
   end
 
   # Miscellaneous pages
