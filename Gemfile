@@ -24,11 +24,6 @@ gem 'rabl'
 
 gem 'bootstrap-sass', '~> 3.1.1'
 
-# Monitoring
-group :production do
-  gem 'newrelic_rpm'
-end
-
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'

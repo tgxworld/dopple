@@ -1,5 +1,3 @@
-- activities = @client.activities_on_date(Date.current)
-
 .row-fluid
   - if !user_signed_in?
     .row
@@ -12,13 +10,8 @@
     .row
       %h1
         Steps
-        = activities['summary']['steps']
+        = @client.activities_on_date(Date.current)['summary']['steps']
     .row
       %h1
         Fairly Active Minutes
-        = activities['summary']['fairlyActiveMinutes']
-
-.row
-  %section.left.first asdas
-  %section.left.second adsad
-  %section.left.third adas
+        = @client.activities_on_date(Date.current)['summary']['fairlyActiveMinutes']
