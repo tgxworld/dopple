@@ -29,13 +29,11 @@ group :production do
   gem 'newrelic_rpm'
 end
 
-group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
   gem 'jquery-rails'
   gem 'handlebars_assets', '~> 0.12.0'
-end
 
 group :development, :test do
   gem 'factory_girl_rails'
